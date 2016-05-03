@@ -8,3 +8,4 @@ C:\Users\Alex\Desktop\Gestion formation\Gestion formation\obj\Debug\Gestion_form
 C:\Users\Alex\Desktop\Gestion formation\Gestion formation\obj\Debug\Gestion formation.csproj.GenerateResource.Cache
 C:\Users\Alex\Desktop\Gestion formation\Gestion formation\obj\Debug\Gestion formation.exe
 C:\Users\Alex\Desktop\Gestion formation\Gestion formation\obj\Debug\Gestion formation.pdb
+C:\Users\Alex\Desktop\Gestion formation\Gestion formation\obj\Debug\Gestion_formation.formCRUD.resources

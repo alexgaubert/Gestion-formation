@@ -17,21 +17,34 @@ namespace Gestion_formation
             InitializeComponent();
         }
 
-        private void gestionDesPersonnesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormPersonne FP = new FormPersonne();
-            FP.MdiParent = this;
-            FP.Show();
-        }
-
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             controleur.Vmodele.sedeconnecter();
         }
 
-        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        private void importToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            controleur.Vmodele.import();
+            controleur.init();
+            controleur.Vmodele.seconnecter();
+            if (controleur.Vmodele.Connopen == false)
+            {
+                MessageBox.Show("erreur");
+            }
+            else
+            {
+                controleur.Vmodele.import();
+                if (controleur.Vmodele.Chargement == true)
+                {
+                    gestionDesDonnéesToolStripMenuItem.Enabled = true;
+                }
+            }
+        }
+
+        private void gestionDesDonnéesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPersonne FP = new FormPersonne();
+            FP.MdiParent = this;
+            FP.Show();
         }
     }
 }

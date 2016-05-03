@@ -33,8 +33,6 @@
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionDesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionDesFormationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +43,7 @@
             this.gestionDesDonnéesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(939, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(495, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,49 +59,34 @@
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.importToolStripMenuItem.Text = "import";
-            this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
+            this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click_1);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.exportToolStripMenuItem.Text = "export";
             // 
             // gestionDesDonnéesToolStripMenuItem
             // 
-            this.gestionDesDonnéesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionDesPersonnesToolStripMenuItem,
-            this.gestionDesFormationsToolStripMenuItem});
             this.gestionDesDonnéesToolStripMenuItem.Enabled = false;
             this.gestionDesDonnéesToolStripMenuItem.Name = "gestionDesDonnéesToolStripMenuItem";
-            this.gestionDesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.gestionDesDonnéesToolStripMenuItem.Text = "Gestion des données";
-            // 
-            // gestionDesPersonnesToolStripMenuItem
-            // 
-            this.gestionDesPersonnesToolStripMenuItem.Name = "gestionDesPersonnesToolStripMenuItem";
-            this.gestionDesPersonnesToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.gestionDesPersonnesToolStripMenuItem.Text = "gestion des personnes";
-            this.gestionDesPersonnesToolStripMenuItem.Click += new System.EventHandler(this.gestionDesPersonnesToolStripMenuItem_Click);
-            // 
-            // gestionDesFormationsToolStripMenuItem
-            // 
-            this.gestionDesFormationsToolStripMenuItem.Name = "gestionDesFormationsToolStripMenuItem";
-            this.gestionDesFormationsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.gestionDesFormationsToolStripMenuItem.Text = "gestion des formations";
+            this.gestionDesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.gestionDesDonnéesToolStripMenuItem.Text = "Gestion des artistes";
+            this.gestionDesDonnéesToolStripMenuItem.Click += new System.EventHandler(this.gestionDesDonnéesToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 552);
+            this.ClientSize = new System.Drawing.Size(495, 451);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gestionnaire de groupe";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -119,8 +102,6 @@
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesDonnéesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestionDesPersonnesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestionDesFormationsToolStripMenuItem;
     }
 }
 
